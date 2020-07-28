@@ -1,5 +1,8 @@
 {
   "name": "facts-lambda",
   "version": "1.0.0",
+  "scripts": {
+    "migrate": "cp ../factscraper/data/facts.json ./facts.json"
+  },
   "dependencies": {}
 }
