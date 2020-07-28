@@ -7,8 +7,9 @@ exports.handler = async (event, context, callback) => {
   const familymode = event['pathParameters']['familymode']
 
   const randomFact = familymode
-    ? facts[Math.floor(Math.random() * facts.length)]
-    : factsFamily[Math.floor(Math.random() * factsFamily.length)]
+    ? factsFamily[Math.floor(Math.random() * factsFamily.length)]
+    : facts[Math.floor(Math.random() * facts.length)]
+
   const response = {
     statusCode: 200,
     body: JSON.stringify(randomFact),
