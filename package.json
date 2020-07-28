@@ -2,7 +2,12 @@
   "name": "facts-lambda",
   "version": "1.0.0",
   "scripts": {
-    "migrate": "cp ../factscraper/data/facts.json ./facts.json"
+    "migrate": "cp ../factscraper/data/facts.json ./facts.json",
+    "test": "mocha test.js"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
 }
