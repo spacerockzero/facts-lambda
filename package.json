@@ -1,5 +1,13 @@
 {
   "name": "facts-lambda",
   "version": "1.0.0",
-  "dependencies": {}
+  "scripts": {
+    "migrate": "cp ../factscraper/data/facts.json ./facts.json",
+    "test": "mocha test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
 }
