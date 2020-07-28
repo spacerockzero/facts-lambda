@@ -6,7 +6,7 @@ console.log('facts.length', facts.length)
 exports.handler = async (event, context, callback) => {
 
   // detect familymode from queryString
-  const familymode = event['pathParameters']['familymode']
+  const familymode = event.queryStringParameters.familymode
 
   // choose random fact from either familymode or normal facts list
   const randomFact = familymode
